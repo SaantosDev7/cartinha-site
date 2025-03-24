@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.envelope {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.envelope .flap {
+    background-color: #b38b6d;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transition: transform 0.5s ease;
+}
+
+.envelope .flap.top {
+    top: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.envelope .flap.bottom {
+    bottom: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.envelope .body {
+    background-color: #f0d9b5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cartinha {
+    display: none;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#abrirEnvelope {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b38b6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#abrirEnvelope:hover {
+    background-color: #9a755f;
+}
